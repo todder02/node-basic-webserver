@@ -26,20 +26,6 @@ function createHTTP(request, response) {
                  }
             });
         }).resume();
-        /*if (request.url === '/') {
-            request.addListener('end', function () {
-                file.serve(request, response);                
-            }).resume();
-        }
-        else if (request.url === '/emmetTest.html'){
-            request.addListener('end', function () {
-                file.serve(request, response);                
-            }).resume();
-        }
-        else {
-        response.writeHead(404);
-        response.end("Page Not Found");
-        }*/
     }
     else {
         response.writeHead(404);
